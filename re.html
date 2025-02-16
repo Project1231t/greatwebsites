@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание Сайтов Под Ключ</title>
+    <style>
+        /* Общие стили для всех элементов */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Стили для основного контента body */
+        body {
+            background: #0066cc;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        /* Стили для основного контейнера */
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Стили для заголовка */
+        h1 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        /* Стили для контейнера виджетов */
+        .widget-container {
+            display: flex;
+            gap: 30px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Стили для виджетов */
+        .widget {
+            width: 200px;
+            height: 200px;
+            background: #80d4ff;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: float 3s ease-in-out infinite;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Стили для виджетов при наведении */
+        .widget:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        /* Стили для кнопки Telegram */
+        .telegram-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: #0088cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            margin-top: 30px;
+            border: 2px solid white;
+        }
+
+        /* Стили для кнопки Telegram при наведении */
+        .telegram-btn:hover {
+            background: #006699;
+            transform: translateY(-3px);
+        }
+
+        /* Анимация парения */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Стили для текста в виджетах */
+        .widget p {
+            color: #004d80;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        /* Медиа-запросы для адаптивного дизайна (для экранов шириной до 768px) */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+
+            .widget-container {
+                gap: 20px;
+                margin: 20px 0;
+            }
+
+            .widget {
+                width: 150px;
+                height: 150px;
+            }
+
+            .widget p {
+                font-size: 1em;
+            }
+
+            .telegram-btn {
+                font-size: 1em;
+                padding: 10px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Профессиональное создание сайтов</h1>
+
+        <div class="widget-container">
+            <div class="widget">
+                <p>Лендинг<br>от 500₽</p>
+            </div>
+            <div class="widget">
+                <p>Интернет-магазин<br>от 5000₽</p>
+            </div>
+            <div class="widget">
+                <p>Корпоративный сайт<br>от 3000₽</p>
+            </div>
+        </div>
+
+        <a href="https://t.me/GreatWebSite" target="_blank" class="telegram-btn">
+            🛍 Заказать сайт через Telegram
+        </a>
+    </div>
+</body>
+</html>
